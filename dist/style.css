@@ -90,3 +90,98 @@ body {
   background-color: #bebebe;
   color: #2e2e2e;
 }
+
+#menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#menu h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#menu div {
+  margin-bottom: 5px;
+}
+
+#menu div span {
+  font-weight: bold;
+}
+
+.sidebar {
+  position:fixed;
+  
+  top: 0;
+  
+  left: -350px; /* Inicialmente escondido */
+  width: 340px;
+  height: 100%;
+  background-color: red(0, 0, 0, 0.7);
+  padding: 57px;
+  box-sizing: border-box ;
+  
+  transition: left 0.3s ease-in-out;
+  color: white;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: 25px;
+}
+
+.sidebar.open {
+  left: 0; /* Mostra a barra lateral */
+  border-radius: 60px;
+  border-color:#32fe5e;
+  border-width: 5px;
+  border-style: double;
+  
+  
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sidebar div {
+  margin-bottom: 10px;
+}
+
+.sidebar div span {
+  font-weight: bold;
+}
+
+
+#openSidebarButton {
+  position: fixed;
+  background-color: transparent; /* Define a cor de fundo do botão */
+  top: 25px;
+  left: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 10px;
+  border-radius: 50%;
+  color:#32fe5e;
+  font-size: 20px;
+  
+}
+
+#openSidebarButton::before {
+  content: "\6"; /* Código Unicode do ícone */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif; 
+  
+}
+#closeSidebarButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: white;
+  
+}
